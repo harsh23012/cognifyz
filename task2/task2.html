@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task Management</h1>
+    <div class="container">
+        <div class="task-list">
+            <h2>Tasks</h2>
+            <ul id="task-list">
+                <!-- tasks will be displayed here -->
+            </ul>
+        </div>
+        <div class="task-form">
+            <h2>Create Task</h2>
+            <form id="task-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description"><br><br>
+                <label for="isCompleted">Is Completed:</label>
+                <input type="checkbox" id="isCompleted" name="isCompleted"><br><br>
+                <button id="create-task-btn">Create Task</button>
+            </form>
+        </div>
+        <div class="task-update-form" style="display: none;">
+            <h2>Update Task</h2>
+            <form id="task-update-form">
+                <label for="update-name">Name:</label>
+                <input type="text" id="update-name" name="update-name"><br><br>
+                <label for="update-description">Description:</label>
+                <input type="text" id="update-description" name="update-description"><br><br>
+                <label for="update-isCompleted">Is Completed:</label>
+                <input type="checkbox" id="update-isCompleted" name="update-isCompleted"><br><br>
+                <button id="update-task-btn">Update Task</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
